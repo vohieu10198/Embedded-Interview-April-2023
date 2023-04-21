@@ -52,6 +52,4 @@ int main(){
     
     sortArray(arr,n);
     printArray(arr,n);
-
-    CountTimes(arr,n);
 }
