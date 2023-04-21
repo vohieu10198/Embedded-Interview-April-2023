@@ -30,17 +30,6 @@ void sortArray(int arr[], int n){
 
 }
 
-// void CountTimes(int arr[], int n){
-//     int count = 1;
-//     for (int i = 0; i < n; i++){
-//         for (int j = i +1; j < n; j++){
-//             if (arr[i] == arr[j]){
-//                 count++;
-//             }   
-//             printf("%d appears %d time(s)\n", arr[i], count);
-//         }
-//     }
-// }
 
 // Print array
 void printArray(int arr[], int n){
