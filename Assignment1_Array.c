@@ -3,7 +3,7 @@
 #include <time.h>
 
 
-// Create a random array with n members
+// Create a random array with n elements
 void createArray(int arr[], int n){
     
     srand((int) time(0));
@@ -14,23 +14,41 @@ void createArray(int arr[], int n){
 
 }
 
+
+// Sorting array's elements in ascending orders
+void sortArray(int arr[], int n){
+    for (int i = 0; i < n ; i++){
+        for(int j = i + 1; j < n; j++){
+            if (arr[i] > arr[j]){
+                int temp;
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+
+}
+
+// void CountTimes(int arr[], int n){
+//     int count = 1;
+//     for (int i = 0; i < n; i++){
+//         for (int j = i +1; j < n; j++){
+//             if (arr[i] == arr[j]){
+//                 count++;
+//             }   
+//             printf("%d appears %d time(s)\n", arr[i], count);
+//         }
+//     }
+// }
+
 // Print array
 void printArray(int arr[], int n){
    
-    printf("Array: ");
-    for (int i =0; i < n; i++)
+    for (int i =0; i < n; i++){
     printf("%2d", arr[i]);
-}
-
-void swap(int *a, int *b){
-    int *temp;
-    *temp = *a;
-    *a = *b;
-    *b = *temp;
-}
-
-void sortArray(){
-
+    }
+    printf("\n");
 }
 
 int main(){
@@ -42,4 +60,9 @@ int main(){
     
     createArray(arr,n);
     printArray(arr,n);
+    
+    sortArray(arr,n);
+    printArray(arr,n);
+
+    CountTimes(arr,n);
 }
