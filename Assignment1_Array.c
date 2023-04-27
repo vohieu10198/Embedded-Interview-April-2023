@@ -8,7 +8,7 @@ void createArray(int arr[], int n){
     
     srand((int) time(0));
     for (int i = 0; i < n; i++){
-        arr[i] = rand() % (n+1);
+        arr[i] = rand() % 11;
     }
 
 
