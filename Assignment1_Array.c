@@ -74,16 +74,16 @@ void count_element(int arr[] , int b[], int n, int m){
 
 int main()
 {
-    int n, arr[n];
+   	int n, arr[n];
 	int b[n];
 	int m;
 
-    printf("Enter the number of array's members: ");
-    scanf("%d",&n);
+   	printf("Enter the number of array's members: ");
+  	scanf("%d",&n);
 
-    create_random_array(arr, n);
+    	create_random_array(arr, n);
 	printf("A random array is: ");
-    print_array(arr, n);
+  	print_array(arr, n);
 
 	sortArray(arr,n);
 	printf("Array is sorted in ascending order:");
