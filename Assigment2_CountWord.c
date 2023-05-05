@@ -16,18 +16,14 @@ int string_length(char *str){
 }
 
 void lowcase(char *str){
-     int str_length = string_length(str);
-     char *sub_str = (char*)malloc((str_length+1) * sizeof(char)); 
-    sub_str[str_length] = '\0'; 
-    for(int i=0; i <= str_length; ++i){ 
-        if(str[i] >= 'A' && str[i] <= 'Z'){ 
-            sub_str[i] = (str[i] + 32); 
+     for (int i = 0; i < strlen(str); i++) {
+        if (str[i] >= 'A' && str[i] <= 'Z') {
+            str[i] += 32;
         }
-        else sub_str[i] = str[i]; 
     }
-    printf("%s",sub_str);
-    free(sub_str);
+    printf("%s", str);
 }
+
 
 int main(int argc, char const *argv[])
 {
