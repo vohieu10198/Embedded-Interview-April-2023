@@ -1,5 +1,6 @@
  #include <stdio.h>
 
+char your_sentence[] = "She sells seashells on the seashore. The shells she sells are seashells";
 
 void reverse(char* begin, char* end)
 {
@@ -33,9 +34,8 @@ void reverseWords(char* s)
 
 int main()
 {
-	char s[] = "She sells seashells on the seashore. The shells she sells are seashells";
-    char* temp = s;
-    reverseWords(s);
-    printf("%s", s);
+	
+    reverseWords(your_sentence);
+    printf("%s", your_sentence);
     return 0;
 }
