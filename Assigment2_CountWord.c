@@ -24,11 +24,36 @@ void lowcase(char *str){
     printf("%s", str);
 }
 
+void plit_word(char *str){
+    char splitStrings[1000][1000]; 
+    int cnt = 0;
+    int j =0;
+    int len = string_length(str);
+    for (int i = 0; i <= len; i++) {
+        if (str[i] == ' ' || str[i] == '\0') {
+            splitStrings[cnt][j] = '\0';
+            cnt++; 
+            j = 0; 
+        }
+        else {
+            splitStrings[cnt][j] = str[i];
+            j++;
+        }
+    }
+    for (int i = 0; i < cnt; i++)
+        printf("%s\n", splitStrings[i]);
+}
+
+void count_word(char *str)
+
+
 
 int main(int argc, char const *argv[])
 {
-	  string_length(your_sentence);
-    lowcase(your_sentence);
-	
+	string_length(your_sentence);
+	printf("\n");
+	lowcase(your_sentence);
+	printf("\n");
+	plit_word(your_sentence);
     return 0;
 }
