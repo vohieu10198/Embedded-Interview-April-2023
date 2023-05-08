@@ -44,7 +44,9 @@ void plit_word(char *str){
         printf("%s\n", splitStrings[i]);
 }
 
-void count_word(char *str)
+void count_word(char *str){
+
+}
 
 
 
