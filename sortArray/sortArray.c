@@ -12,7 +12,6 @@
 
 // Create a random array with n integer numbers
 // Sorting array's element in ascending order
-// Count occurrences of elements in array
 
 
 
