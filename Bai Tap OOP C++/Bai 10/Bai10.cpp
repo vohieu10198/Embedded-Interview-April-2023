@@ -96,13 +96,14 @@ void book::bookinfo(){
     cout << "Name: " << _name << endl;
     cout << "Author: " << _author << endl;
     cout << "Publised year: " << _publish_year << endl;
+    cout << "Amount: " << _amount << endl;
 }
 
 
 
 int main(int argc, char const *argv[])
 {
-    book mybook("C How to program", "Paul Deitel", 1992, 10);
+    book mybook("Once Upon a Cow", "Dr. Camilo Cruz", 2009, 100);
     mybook.bookinfo();
 
     return 0;
