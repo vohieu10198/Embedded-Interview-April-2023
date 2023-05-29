@@ -26,6 +26,16 @@ typedef enum{
     Below_average
 }RankType;
 
+typedef enum{
+    _student_name,
+    _age,
+    _sex,
+} TypeInput;
+
+#define INPUT_DATA(text, var)     \
+    cout << text;                 \
+    cin >> var;                   \
+
 /*
  * Function: Class Student
  * Description: The class represents the properties and methods of the student
