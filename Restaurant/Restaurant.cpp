@@ -13,15 +13,15 @@
 using namespace std;
 
 typedef enum{
-    available,
-    booked,
+    available = 1,
+    booked = 0,
 }checkStatus;
 
 typedef enum{
-    BACK,
-    MANAGER,
-    STAFF
-}listCommand;
+    BACK = 0,
+    MANAGER = 1,
+    STAFF = 2
+}homePage;
 
 class Manager{
     private:
@@ -186,8 +186,9 @@ class Order{
     int _amount;
     public:
     Order(int id, int amount);
-    string getOrderName();
-    void setOrderName(string name);
+    Order();
+    int getOrderId();
+    void setOrderId(int id);
     int getOrderAmount();
     void setOrderAmount(int amount);
     void listCommand();
@@ -198,9 +199,149 @@ class Order{
 
 };
 
+Order::Order(){
+
+}
+
 Order::Order(int id, int amount){
     Order::_id = id;
     Order::_amount = amount;
+}
+
+/*
+* Class: Order
+* Function: getOrderId
+* Description: This function use for getting id of order
+* Input:
+*   None
+* Output:
+*   return: id
+*/
+
+int Order::getOrderId(){
+    return this->_id;
+}
+
+/*
+* Class: Order
+* Function: setOrderId
+* Description: This function use for setting id of order
+* Input:
+*   int: id
+* Output:
+*   return: none
+*/
+
+void Order::setOrderId(int id){
+    Order::_id = id;
+}
+
+/*
+* Class: Order
+* Function: getOrderAmount
+* Description: This function use for getting amount of beverage to take order 
+* Input:
+*   None
+* Output:
+*   return: amount
+*/
+
+int Order::getOrderAmount(){
+    return this->_amount;
+}
+
+/*
+* Class: Order
+* Function: setOrderAmount
+* Description: This function use for setting amount of beverage to take order 
+* Input:
+*   int: amount
+* Output:
+*   return: none
+*/
+
+void Order::setOrderAmount(int amount){
+    Order::_amount = amount;
+}
+
+
+
+class Table{
+    private:
+    int _table_id;
+    int _table_status;
+    public:
+    Table();
+    Table(int id, int status);
+
+    int getTableID();
+    void setTableID(int id);
+
+    int getTableStatus();
+    void setTableStatus(int status);
+};
+
+Table::Table(){}
+
+Table::Table(int id, int status){
+    Table::_table_id = id;
+    Table::_table_status = status;
+}
+
+/*
+* Class: Table
+* Function: getTableID
+* Description: This function use for getting ID of Table 
+* Input:
+*   None
+* Output:
+*   return: table id
+*/
+
+int Table::getTableID(){
+    return this->_table_id;
+}
+
+/*
+* Class: Table
+* Function: setTableID
+* Description: This function use for setting ID of Table 
+* Input:
+*   int: id
+* Output:
+*   return: None
+*/
+
+void Table::setTableID(int id){
+    Table::_table_id = id;
+}
+
+/*
+* Class: Table
+* Function: getTableStatus
+* Description: This function use for getting ID of Table 
+* Input:
+*   None
+* Output:
+*   return: table status
+*/
+
+int Table::getTableStatus(){
+    return this->_table_status;
+}
+
+/*
+* Class: Table
+* Function: setTableStatus
+* Description: This function use for setting status of Table 
+* Input:
+*   int: status
+* Output:
+*   return: None
+*/
+
+void Table::setTableStatus(int status){
+    Table::_table_status = status;
 }
 
 
