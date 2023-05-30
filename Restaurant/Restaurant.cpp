@@ -17,6 +17,12 @@ typedef enum{
     booked,
 }checkStatus;
 
+typedef enum{
+    BACK,
+    MANAGER,
+    STAFF
+}listCommand;
+
 class Manager{
     private:
     int _beverage_id;
@@ -200,7 +206,29 @@ Order::Order(int id, int amount){
 
 int main(int argc, char const *argv[])
 {
-    Manager mn("Pepsi", 10000, 1000);
-    mn.listCommand();
+    int command;
+
+    while(1){
+        
+
+        switch (command)
+        {
+        case BACK: 
+            return 0;
+            break;
+
+        case MANAGER:
+            
+            break;
+
+        case STAFF:
+    
+            break;
+        default:
+            printf("ERROR!\n");
+            break;
+        }
+
+        }
     return 0;
 }
