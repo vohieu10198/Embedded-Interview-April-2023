@@ -63,7 +63,7 @@ void reverseString(char* string)
 	reverse(string, temp - 1);
 }
 
-// Driver Code
+
 int main()
 {
 	char string[] = "She sells seashells on the seashore. The shells she sells are seashells";
