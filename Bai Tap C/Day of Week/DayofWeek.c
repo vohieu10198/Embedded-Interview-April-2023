@@ -68,7 +68,7 @@ int weekDay(int year, int month, int day)
                - ((year + 4800 - ((14 - month) / 12)) / 100)
                + ((year + 4800 - ((14 - month) / 12)) / 400)
                - 32045)
-        % 7;
+        % 7;  //Julian Day Calculation 
     return weekDay;
 }
 
