@@ -1,6 +1,6 @@
 /*
-* File: Bai1_HoangQuocBinh.c
-* Author: HOANG QUOC BINH
+* File: ReverseString.c
+* Author: VO MINH HIEU
 * Date: 02/06/2023
 * Description: This is file for array handling
 */
@@ -9,7 +9,6 @@
 
 /*
 * Function: reverse
-* Description: This function use for reversing string
 * Input:
 *   char: begin
 *   char: end
@@ -31,7 +30,6 @@ void reverse(char* begin, char* end)
 
 /*
 * Function: reverseString
-* Description: This function use for reversing string
 * Input:
 *   string - input string
 * Output:
