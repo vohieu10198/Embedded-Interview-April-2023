@@ -28,7 +28,8 @@ void randomArr(int iArray[])
 * Description: This function sorts all elements in an array in ascending order
 * Input:
 *   iArray - an array with n integer members
-*   n - an integer value
+* Output:
+*   None
 */
 
 void sortArray(int iArray[]){
@@ -45,6 +46,14 @@ void sortArray(int iArray[]){
 
 }
 
+/*
+* Function: printArray
+* Description: This function prints the array into the screen
+* Input:
+*   iArray - an array with n integer members
+* Output:
+*   Array
+*/
 
 void printArray(int iArray[])
 {
@@ -52,6 +61,13 @@ void printArray(int iArray[])
     for (int i = 0; i < 10000; i++)
     printf("%d ", iArray[i]);
 }
+
+/*
+* Function: binarySearch
+* Description: This function prints the array into the screen
+* Input:
+*   iArray - an array with 10000 integer members
+*/
 
 int binarySearch(int iArray[], int yourNum){
     int low = 0;
