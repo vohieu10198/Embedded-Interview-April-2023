@@ -66,7 +66,6 @@ void sortArray(int iArray[], int n){
 
 /*
 * Function: countOccurences
-* Description: This function uses array tempArray with length equal to iArray[] with all elements at the beginning with 1 to count how many times the element appears in the array
 * Input:
 *   n: size of array that user input
 *   iArray: array
