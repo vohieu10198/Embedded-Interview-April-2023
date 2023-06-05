@@ -2,7 +2,7 @@
 * File: ReverseString.c
 * Author: VO MINH HIEU
 * Date: 02/06/2023
-* Description: This is file for array handling
+* Description: This is file for reversing a string
 */
 
 #include <stdio.h>
